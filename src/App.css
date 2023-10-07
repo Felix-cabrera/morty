@@ -193,4 +193,13 @@
   .resident__container{
     width: 100%;
   }
+  .location{
+    width: 300px;
+  }
+  .location__list{
+    gap: 0.5em;
+  }
+  .location__item{
+    font-size: 0.8em;
+  }
 }
