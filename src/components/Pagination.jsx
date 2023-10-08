@@ -12,7 +12,7 @@ const Pagination = ({productsPerPage, currentPage, setCurrentPage, totalProducts
     setCurrentPage(currentPage - 1)
   }
   const onNextPage = () => {
-    if(currentPage + 1 <= Math.ceil(totalProducts/productsPerPage))
+    if(currentPage + 1 <= pageNumbers.length)
     setCurrentPage(currentPage + 1)
   }
   const onSpecifiPage = (n) => {

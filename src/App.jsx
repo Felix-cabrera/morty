@@ -8,7 +8,7 @@ import Pagination from './components/Pagination'
 
 function App() {
   const [inpuntValue, setInpuntValue] = useState(getRandomNumber(126))
-  const url = `https://rickandmortyapi.com/api/location/${inpuntValue || 'hola'}`
+  const url = `https://rickandmortyapi.com/api/location/${inpuntValue}`
   const [location, getLocation, hasError, isLoading] = useFetch(url)
 
   useEffect(() => {
@@ -69,8 +69,6 @@ function App() {
       currentPage={currentPage}
       setCurrentPage={setCurrentPage}
       totalProducts={totalProducts}
-      lastIndex={lastIndex}
-      firstIndex={firstIndex}
     />
       <footer className='footer__container'>
         <h2 className='footer__title'>Made with ❤️ in academlo</h2>

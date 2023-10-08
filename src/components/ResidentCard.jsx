@@ -4,6 +4,7 @@ import useFetch from "../hooks/useFetch"
 const ResidentCard = ({url}) => {
 
     const [resident,getResident] = useFetch(url)
+
     useEffect(() => {
         getResident()
     },[])

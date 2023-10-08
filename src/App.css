@@ -173,7 +173,7 @@
   background-color: #485fc7;
 }
 .is-disabled{
-  display: none;
+  visibility: hidden;
 }
 .footer__container{
   width: 100%;
@@ -201,5 +201,8 @@
   }
   .location__item{
     font-size: 0.8em;
+  }
+  .is-disabled{
+    display: none;
   }
 }
